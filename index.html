@@ -11,30 +11,47 @@
     <div class="container">
         <h2>YOU MAY ONLY SELECT ONE LARGE TOY AND TWO SMALL TOYS</h2>
         <div class="item-container">
-            <div value="asdf" class="item fidget-spinner small">
+            <div value="asdf" class="item fidget-spinner ">
                 <img src="fidget spinner.jfif" alt="">
                 <h2 value="asdf" class="item-title">COOL AWESOME FIDGET SPINNER(small toy)</h2>
                 <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.</p>
                 <p class="item-price">2.99</p>
-                <button onclick="addedToCart('fidget-spinner', 'small')" class="item-button">ADD TO ORDER</button>
+                <button onclick="addedToCart('fidget-spinner', 'small')" class="item-button small">ADD TO ORDER</button>
             </div>
-            <div value="asdf" class="item pop-it small">
-                <img src="" alt="">
+            <div value="asdf" class="item pop-it ">
+                <img src="popit.jfif" alt="">
                 <h2 value="asdf" class="item-title">COOL AWESOME POP IT(small toy)</h2>
                 <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.</p>
                 <p class="item-price">3.99</p>
-                <button onclick="addedToCart('pop-it', 'small')" class="item-button">ADD TO ORDER</button>
+                <button onclick="addedToCart('pop-it', 'small')" class="item-button small">ADD TO ORDER</button>
             </div>
-            <div class="item rubiks-cube large">
+            <div value="asdf" class="item mochi-animal ">
+                <img src="mochianimal.jfif" alt="">
+                <h2 value="asdf" class="item-title">COOL AWESOME MOCHI ANIMAL(small toy)</h2>
+                <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.</p>
+                <p class="item-price">3.99</p>
+                <button onclick="addedToCart('mochi-animal', 'small')" class="item-button small">ADD TO ORDER</button>
+            </div>
+            <div class="item rubiks-cube ">
                 <img src="/cube.png" alt="">
                 <h2 class="item-title">COOL AWESOME RUBIKS CUBE(large toy)</h2>
                 <p class="item-desc">it. Dit. Dicta, unde.Lorem, ipsum dolor sit aicta, unde.Lorem, ipsum dolor sit amet cit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.</p>
                 <p class="item-price">7.99</p>
-                <button onclick="addedToCart('rubiks-cube', 'large')" class="item-button">ADD TO ORDER</button>
+                <button onclick="addedToCart('rubiks-cube', 'large')" class="item-button large">ADD TO ORDER</button>
+            </div>
+            <div class="item squishmallow ">
+                <img style="height: 300px"src="/squishmallows.6-In-Plushes" alt="">
+                <h2 class="item-title">COOL AWESOME SQUISH CUBE(large toy)</h2>
+                <p class="item-desc">it. Dit. Dicta, unde.Lorem, ipsum dolor sit aicta, unde.Lorem, ipsum dolor sit amet cit. Dicta, unde.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, unde.</p>
+                <p class="item-price">7.99</p>
+                <button onclick="addedToCart('squishmallow', 'large')" class="item-button large">ADD TO ORDER</button>
             </div>
         </div>
-        <div class="selected-population">
-            <button onclick="showTotal()" class="get-total">GET YOUR TOTAL</button>
+        <div class="final">
+            <div class="cart">
+                <h2>CART:</h2>
+            </div>
+            <div class="total-show"></div>
         </div>
     </div>
 </body>

@@ -1,19 +1,19 @@
 var total = 0;
-var populateDiv = document.querySelector(".selected-population");
+var populateDiv = document.querySelector(".cart");
 
 var largeToy = 1;
 var smallToy = 2;
 
 function itemAmmountVerification(size) {
-  var largeDiv = document.querySelector(".large");
-  console.log(largeDiv);
+  var largeDiv = document.querySelectorAll(".large");
   var smallDiv = document.querySelectorAll(".small");
-  console.log(smallDiv);
 
   if (size === "large") {
     largeToy = largeToy - 1;
     if (largeToy === 0) {
-      largeDiv.classList.add("hidden");
+      largeDiv.forEach((item) => {
+        item.classList.add("hidden");
+      });
     }
   } else if (size === "small") {
     smallToy = smallToy - 1;
@@ -22,13 +22,11 @@ function itemAmmountVerification(size) {
         item.classList.add("hidden");
       });
     }
-    console.log(smallToy);
   }
 }
 
 function addedToCart(className, itemSize) {
   var selectedClass = document.querySelector(`.${className}`);
-  // console.log(selectedClass.childNodes);
   var selectedText = selectedClass.childNodes[3].innerHTML;
   var selectedPrice = selectedClass.childNodes[7].innerHTML;
   var showSelection = document.createElement("div");
@@ -46,8 +44,6 @@ function waitressAlert() {
 }
 
 function showTotal() {
-  var showTotal = document.createElement("div");
-  var totalToShow = document.createTextNode(total);
-  showTotal.appendChild(totalToShow);
-  populateDiv.appendChild(showTotal);
+  var totalDiv = document.querySelector(".total-show");
+  totalDiv.innerHTML = total;
 }
